@@ -22,7 +22,7 @@ public class Categoria {
 	
 	@OneToMany(mappedBy = "categoria")
 	private List<Atividade> atividades = new ArrayList<>();
-	
+		
 	public Categoria () {}
 
 	public Categoria(Integer id, String descricao) {		
@@ -46,8 +46,5 @@ public class Categoria {
 		this.descricao = descricao;
 	}
 
-	public List<Atividade> getAtividades() {
-		return atividades;
-	}
 		
 }

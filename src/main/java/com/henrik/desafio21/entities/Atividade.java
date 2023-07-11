@@ -41,8 +41,8 @@ public class Atividade {
 	private Categoria categoria;
 	
 	@OneToMany(mappedBy = "atividade")
-	private List<Bloco> blocos =  new ArrayList<>();
-		
+	private List<Bloco> blocos = new ArrayList<>();
+			
 	public Atividade () {
 		
 	}
@@ -92,6 +92,14 @@ public class Atividade {
 
 	public List<Bloco> getBlocos() {
 		return blocos;
+	}
+	
+	public void setBlocos(List<Bloco> blocos) {
+		this.blocos = blocos;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
 	}
 
 }
